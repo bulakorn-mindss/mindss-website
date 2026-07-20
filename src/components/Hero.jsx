@@ -1,22 +1,25 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './Hero.css';
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="home" className="hero">
       <div className="hero-background"></div>
       <div className="container hero-container">
         <div className="hero-content">
           <h1 className="hero-title">
-            ยกระดับธุรกิจของคุณด้วย <br />
-            <span className="text-gradient">โซลูชันไอทีแห่งอนาคต</span>
+            {t('hero.title1')} <br />
+            <span className="text-gradient">{t('hero.title2')}</span>
           </h1>
           <p className="hero-subtitle">
-            บริษัท มายด์ โซลูชั่น แอนด์ เซอร์วิส จำกัด พันธมิตรที่เชื่อถือได้ของคุณ สำหรับอุปกรณ์ไอที เน็ตเวิร์ค และระบบสื่อสารแบบครบวงจร
+            {t('hero.subtitle')}
           </p>
           <div className="hero-actions">
-            <a href="#services" className="btn btn-primary">ดูบริการของเรา</a>
-            <a href="#about" className="btn btn-outline">เรียนรู้เพิ่มเติม</a>
+            <a href="#services" className="btn btn-primary">{t('hero.btn_services')}</a>
+            <a href="#about" className="btn btn-outline">{t('hero.btn_about')}</a>
           </div>
         </div>
       </div>
