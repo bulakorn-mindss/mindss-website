@@ -29,10 +29,7 @@ const About = () => {
           </div>
         </div>
         <div className="about-image-wrapper">
-          <div className="about-image-placeholder glass-panel">
-            <span className="placeholder-icon">🏢</span>
-            <p>{t('about.placeholder')}</p>
-          </div>
+          <img src="/images/cloud.jpg" alt="Mind Solution and Service" className="about-image glass-panel" />
         </div>
       </div>
     </section>
