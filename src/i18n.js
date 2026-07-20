@@ -1,7 +1,6 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-// Translation resources
 const resources = {
   th: {
     translation: {
@@ -23,15 +22,20 @@ const resources = {
         title_our: "บริการ",
         title_services: "ของเรา",
         subtitle: "โซลูชันเทคโนโลยีครบวงจรที่ออกแบบมาเพื่อเสริมศักยภาพการดำเนินธุรกิจและขับเคลื่อนการเติบโตของคุณ",
+        close: "ปิด",
         items: {
           item0_title: "จัดจำหน่ายอุปกรณ์ไอที",
           item0_desc: "ขายส่งและปลีกคอมพิวเตอร์ แล็ปท็อป และอุปกรณ์ไอทีประสิทธิภาพสูงเพื่อรองรับทุกความต้องการทางธุรกิจ",
+          item0_detail: "เราจัดหาคอมพิวเตอร์ แล็ปท็อป เซิร์ฟเวอร์ และอุปกรณ์ต่อพ่วงที่เหมาะสมกับธุรกิจทุกขนาด โดยเป็นพันธมิตรกับแบรนด์ชั้นนำระดับโลก มั่นใจได้ในคุณภาพ บริการหลังการขาย และการรับประกันสินค้า",
           item1_title: "ระบบเครือข่ายเน็ตเวิร์ค",
           item1_desc: "โครงสร้างพื้นฐานเครือข่ายที่เสถียรและรองรับการขยายตัว ตั้งแต่เร้าเตอร์ สวิตช์ ไปจนถึงเซิร์ฟเวอร์เต็มรูปแบบ",
+          item1_detail: "บริการออกแบบ ติดตั้ง และดูแลระบบเครือข่ายสำหรับองค์กร (LAN, WAN, Wi-Fi, VPN) รองรับการใช้งานของบุคลากรจำนวนมาก พร้อมระบบรักษาความปลอดภัยระดับองค์กร (Firewall)",
           item2_title: "ระบบสื่อสารและโทรคมนาคม",
           item2_desc: "อุปกรณ์สื่อสารที่ทันสมัยและระบบเสียงผ่าน IP (VoIP) เพื่อให้ทีมงานของคุณเชื่อมต่อกันได้อย่างไร้รอยต่อ",
+          item2_detail: "ติดตั้งระบบโทรศัพท์ตู้สาขา (PABX), ระบบ VoIP, และระบบ Video Conference สำหรับห้องประชุม ที่จะช่วยลดต้นทุนการสื่อสารและเพิ่มประสิทธิภาพในการทำงานเป็นทีม",
           item3_title: "บริการที่ปรึกษาและดูแลระบบไอที",
-          item3_desc: "คำแนะนำจากผู้เชี่ยวชาญและการสนับสนุนทางเทคนิค เพื่อให้ระบบไอทีของคุณทำงานได้อย่างราบรื่นตลอดเวลา"
+          item3_desc: "คำแนะนำจากผู้เชี่ยวชาญและการสนับสนุนทางเทคนิค เพื่อให้ระบบไอทีของคุณทำงานได้อย่างราบรื่นตลอดเวลา",
+          item3_detail: "บริการ IT Outsource ครบวงจร, การตรวจสอบระบบไอทีประจำปี, ระบบสำรองข้อมูล (Backup & Recovery), และการย้ายระบบขึ้น Cloud ด้วยทีมวิศวกรผู้เชี่ยวชาญ"
         }
       },
       about: {
@@ -76,15 +80,20 @@ const resources = {
         title_our: "Our",
         title_services: "Services",
         subtitle: "Comprehensive technology solutions designed to empower your business operations and drive growth.",
+        close: "Close",
         items: {
           item0_title: "IT Equipment Distribution",
           item0_desc: "Wholesale and retail of high-performance computers, laptops, and essential IT peripherals for businesses of all sizes.",
+          item0_detail: "We supply computers, laptops, servers, and peripherals tailored for businesses of all sizes. Partnering with top global brands, we guarantee high quality, reliable after-sales service, and product warranties.",
           item1_title: "Networking Solutions",
           item1_desc: "Robust and scalable networking infrastructure, from routers and switches to complete server setups.",
+          item1_detail: "Design, installation, and maintenance of enterprise network systems (LAN, WAN, Wi-Fi, VPN) to support extensive workforce needs, integrated with enterprise-grade security (Firewall).",
           item2_title: "Telecommunications",
           item2_desc: "Advanced communication devices and VoIP solutions to keep your team connected seamlessly.",
+          item2_detail: "Installation of PABX systems, VoIP, and Video Conference systems for meeting rooms, helping to reduce communication costs and increase teamwork efficiency.",
           item3_title: "IT Consulting & Support",
-          item3_desc: "Expert advice and technical support to ensure your IT operations run smoothly 24/7."
+          item3_desc: "Expert advice and technical support to ensure your IT operations run smoothly 24/7.",
+          item3_detail: "Comprehensive IT Outsource services, annual IT system audits, Backup & Recovery systems, and Cloud migration managed by expert engineers."
         }
       },
       about: {
@@ -115,7 +124,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: "th", // default language
+    lng: "th",
     fallbackLng: "en",
     interpolation: {
       escapeValue: false
